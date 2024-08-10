@@ -17,10 +17,12 @@ header {
   font-family: Roboto Condensed;
   background-image: url("public\\assets\\iteration-1\\home-banner.png");
   background-position: 50%;
+  background-size:cover;
   background-repeat:no-repeat;
   height: 1080px;
   color:white;
   padding:70px;
+  background-color: #ce2829;
 }
 
 header p {
@@ -28,6 +30,7 @@ header p {
   font-weight: 300;
   line-height: 92px;
   letter-spacing: 1.5px;
+  margin:40px 0;
  
 }
 
