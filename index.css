@@ -52,6 +52,7 @@ header p {
   line-height: 56px;
   text-align: center;
   padding: 0 60px;
+  border: none;
 }
 .menu {
   display: flex;
@@ -59,8 +60,12 @@ header p {
   justify-content: center;
   margin: 42px 0;
   gap: 42px;
+  margin-top: 0;
 }
-
+.menu-container {
+  width: 100%;
+  background: white;
+}
 .menu-item {
   display: flex;
   gap: 16px;
@@ -74,6 +79,7 @@ header p {
   flex-direction: column;
   gap: 16px;
   width: 422px;
+  margin-top: 53px;
 }
 
 .card {
@@ -135,7 +141,8 @@ h2 {
   height: 118px;
 }
 
-.card-2 h2 {
+.card-2 h2,
+.card-3 h2 {
   font-size: 32px;
   font-weight: 600;
   line-height: 44.27px;
@@ -143,15 +150,19 @@ h2 {
 }
 
 .card-3 {
-  background-image: url("/assets/iteration-2/cta/kart-3.png");
-  background-size: contain;
+  background-image: url("/assets/iteration-2/cta/kart-3-1.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: antiquewhite;
   background-position: bottom;
   color: #292929;
+  display: flex;
+  align-items: center;
+  height: 270px;
+  padding-left: 32px;
 }
 
-.card-3 h3 {
+.card-3 span {
   color: #d80027;
 }
 
@@ -170,6 +181,7 @@ h2 {
   line-height: 44.27px;
   text-align: center;
   color: #ce2829;
+  margin-bottom: 30px;
 }
 
 .choices-1 h3 {
@@ -209,8 +221,6 @@ h2 {
 }
 
 .pizza-card {
-  height: 523px;
-  width: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -218,6 +228,10 @@ h2 {
   margin-bottom: 24px;
   padding: 32px;
   font-family: Barlow;
+}
+.pizza-card img {
+  width: 356px;
+  height: 372px;
 }
 
 .pizza-card h2 {
@@ -243,73 +257,74 @@ h2 {
 }
 
 footer {
-background-color: #1A1A1A;
-color:white;
-width: 540px;
+  background-color: #1a1a1a;
+  color: white;
+  width: 100%;
 }
-footer div:first-child{
- margin:81px 60px 50px 58px;
-}
-
-footer h1{
-font-family: Londrina Solid;
-font-size: 50px;
-font-weight: 400;
-margin-top: 81px;
-margin-bottom: 31px;
+footer div:first-child {
+  margin: 81px 60px 50px 58px;
 }
 
-address{
+footer h1 {
+  font-family: Londrina Solid;
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 81px;
+  margin-bottom: 31px;
+}
+
+address {
   font-style: normal;
 }
 
-.footer-address,.hot-menu ul{
+.footer-address,
+.hot-menu ul {
   list-style-type: none;
   font-family: Barlow;
-font-size: 18px;
-font-weight: 400;
-padding:0;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0;
 }
 .footer-address li {
-  margin-bottom:22px ;
-
+  margin-bottom: 22px;
 }
-.footer-address li a{
+.footer-address li a {
   text-decoration: none;
   color: white;
 }
-.footer-address img{
+.footer-address img {
   margin-right: 13px;
 }
 
-.hot-menu h2, .insta h2{
+.hot-menu h2,
+.insta h2 {
   font-family: Barlow;
-font-size: 24px;
-font-weight: 500;
-margin-top: 58px;
-
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 58px;
 }
 
-.hot-menu li{
-margin-bottom: 7.5px;
-line-height: 32.4px;
-
+.hot-menu li {
+  margin-bottom: 7.5px;
+  line-height: 32.4px;
 }
-.insta div{
+.insta div {
   display: flex;
   flex-wrap: wrap;
-  width:347px;
-  gap:16px;
+  width: 347px;
+  gap: 16px;
   margin-bottom: 2px;
-  margin-top:34px;
+  margin-top: 40px;
 }
 
-.copyright{
+.copyright {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #ffffff15;
   margin-top: 80px;
   padding-top: 34px;
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px;
 }
-
-
