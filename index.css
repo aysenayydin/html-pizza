@@ -1,5 +1,5 @@
 * {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 :root {
   --sari: #fdc913;
@@ -10,11 +10,15 @@
 }
 body {
   width: 585px;
+  background-color: #faf7f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header {
   text-align: center;
   font-family: Roboto Condensed;
-  background-image: url("public\\assets\\iteration-1\\home-banner.png");
+  background-image: url("public/assets/iteration-1/home-banner.png");
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,6 +26,13 @@ header {
   color: white;
   padding: 70px;
   background-color: #ce2829;
+}
+header h1 {
+  font-size: 40px;
+  font-family: Londrina Solid;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
 }
 
 header p {
@@ -34,14 +45,13 @@ header p {
 
 .header-btn {
   background-color: #fdc913;
-  width: 193px;
-  height: 56px;
   border-radius: 50px;
   font-family: Barlow;
   font-size: 24px;
   font-weight: 600;
   line-height: 56px;
   text-align: center;
+  padding: 0 60px;
 }
 .menu {
   display: flex;
@@ -50,71 +60,187 @@ header p {
   margin: 42px 0;
   gap: 42px;
 }
+
 .menu-item {
   display: flex;
   gap: 16px;
-  margin-bottom: 29px;
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .cards {
-  padding: 0 60px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 422px;
 }
-.cards button {
+
+.card {
+  border-radius: 12px;
+  color: white;
+  font-family: Barlow;
+  font-size: 32px;
+}
+h2 {
+  margin: 0;
+}
+.card button {
   border-radius: 50px;
   color: #ce2829;
-  width: 138px;
-  height: 48px;
-  font-size:14px;
+  font-size: 14px;
   font-weight: 600;
-
+  padding: 1rem;
+  border: none;
+  padding: 3px 18px 0px 18px;
+  height: 48px;
+  width: 138px;
+  font-weight: 600;
 }
+
 .card-1 {
-  background-image: url("public\\assets\\iteration-2\\cta\\kart-1.png");
-  background-size:cover;
-  height: 336px;
-  margin-bottom: 16px;
-  border-radius: 12px;
-  color: white;
-  font-family:Quattrocento;
-font-size: 68px;
-padding: 40px;
-
+  background-image: url("/assets/iteration-2/cta/kart-1.png");
+  font-family: Quattrocento;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 296px;
+  background-position: center;
+  padding-top: 40px;
+  padding-left: 40px;
 }
-.card-2 {
-  background-image: url("public\\assets\\iteration-2\\cta\\kart-2.png");
-  background-size:cover;
-  background-position: 70%;
-  height: 270px;
-  margin-bottom: 16px;
-  border-radius: 12px;
-  color: white;
-  font-family:Barlow;
-  padding-top:53px;
-  padding-left:32px ;
+.card-1 h2 {
+  padding: 8px;
+  font-size: 68px;
+  line-height: 72px;
+}
+.card-1 h3 {
   font-family: Barlow;
-font-size: 32px;
-
-
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-weight: 600;
 }
+
+.card-2 {
+  background-color: #292929;
+  height: 164px;
+  padding: 53px 32px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.card-2 img {
+  width: 164.22px;
+  height: 118px;
+}
+
+.card-2 h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44.27px;
+  margin-bottom: 29px;
+}
+
 .card-3 {
-  background-image: url("public\\assets\\iteration-2\\cta\\kart-3.png");
-  background-size:cover;
-  background-position: 80%;
-  height: 270px;
-  border-radius: 12px;
-  font-family:Barlow;
-}
-.card-1 h2{
-    margin:0;
-}
-.card-1 h3{
-    margin:0;
-    font-family: Barlow;
-font-size: 20px;
-font-weight: 600;
-line-height: 26.76px;
-text-align: left;
-
+  background-image: url("/assets/iteration-2/cta/kart-3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: antiquewhite;
+  background-position: bottom;
+  color: #292929;
 }
 
+.card-3 h3 {
+  color: #d80027;
+}
+
+.choices-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 53px;
+  margin-bottom: 53px;
+}
+
+.choices-1 h2 {
+  font-family: Satisfy;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44.27px;
+  text-align: center;
+  color: #ce2829;
+}
+
+.choices-1 h3 {
+  font-family: Barlow;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 56.2px;
+  text-align: center;
+  margin: 0;
+}
+.rounded {
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border: none;
+  background-color: white;
+}
+
+.right-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 30px;
+}
+
+.left-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.menu-item.rounded:hover {
+  background-color: #292929;
+  color: white;
+  cursor: pointer;
+}
+
+.pizza-card {
+  height: 523px;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  margin-bottom: 24px;
+  padding: 32px;
+  font-family: Barlow;
+}
+
+.pizza-card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.menu-info {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+.menu-info div span {
+  margin-right: 33px;
+}
+.menu-info div span:nth-child(2) {
+  font-size: 20px;
+}
+
+footer {
+}
